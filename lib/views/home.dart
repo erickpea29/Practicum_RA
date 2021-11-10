@@ -1,6 +1,7 @@
 import 'package:cook/views/pages.dart';
 import 'package:cook/widgets/my_text_button.dart';
 import 'package:flutter/material.dart';
+import 'animation.dart';
 import 'sidebar.dart';
 
 class Home extends StatelessWidget {
@@ -11,8 +12,8 @@ class Home extends StatelessWidget {
         'Introducción',
         'La importancia de estudiar Derecho Romano',
         Icons.looks_one,
-        () => Navigator.of(context)
-            .push<void>(MaterialPageRoute(builder: (c) => Instructions())),
+        () => Navigator.of(context).push<void>(
+            MaterialPageRoute(builder: (c) => CustomAnimationPage())),
       ),
     ];
     return Scaffold(
