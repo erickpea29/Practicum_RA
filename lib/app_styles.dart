@@ -4,13 +4,13 @@ import './size_configs.dart';
 final kTitle = TextStyle(
     //fontFamily: 'Klasik',
     fontWeight: FontWeight.bold,
-    fontSize: SizeConfig.blockSizeH! * 7,
+    fontSize: SizeConfig.blockSizeH! * 4,
     color: Color.fromRGBO(255, 89, 0, 1));
 
 final STitle = TextStyle(
     //fontFamily: 'Klasik',
     fontWeight: FontWeight.bold,
-    fontSize: SizeConfig.blockSizeH! * 5,
+    fontSize: SizeConfig.blockSizeH! * 4,
     color: Color.fromRGBO(255, 89, 0, 1));
 
 final kBodyText1 = TextStyle(

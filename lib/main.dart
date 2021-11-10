@@ -9,11 +9,11 @@ import './views/pages.dart';
 
 bool? seenOnboard;
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
+  /*WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual,
       overlays: [SystemUiOverlay.bottom, SystemUiOverlay.top]);
   SharedPreferences pref = await SharedPreferences.getInstance();
-  seenOnboard = pref.getBool('seenOnboard') ?? false;
+  seenOnboard = pref.getBool('seenOnboard') ?? false;*/
   runApp(const MyApp());
 }
 

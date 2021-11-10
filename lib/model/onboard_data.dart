@@ -12,7 +12,7 @@ class OnBoarding {
 
 List<OnBoarding> onboardingContents = [
   OnBoarding(
-    title: 'Bienvenido a tu\n Guía Interactiva \nVirtual',
+    title: 'Bienvenido a tu Guía Interactiva Virtual',
     subtitle: 'Desliza Para Continuar  → ',
     image: 'assets/images/Test1.png',
   ),
