@@ -3,6 +3,7 @@ import 'package:cook/views/instructions.dart';
 import 'package:cook/views/webview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'comment.dart';
 
 import 'Home.dart';
 
@@ -67,7 +68,7 @@ class NavBar extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => Instructions()),
+                MaterialPageRoute(builder: (context) => Comment()),
               );
             },
           ),
