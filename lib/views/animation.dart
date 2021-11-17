@@ -46,6 +46,17 @@ class _CustomAnimationPageState extends State<CustomAnimationPage> {
     await audioPlayer.pause();
   }
 
+  playAnimation() async {
+    await arkitController.playAnimation(
+        key: 'dancing',
+        sceneName: 'models.scnassets/amoenus_dancingFixed',
+        animationIdentifier: 'amoenus_dancingFixed-1');
+  }
+
+  stopAnimation() async {
+    await arkitController.stopAnimation(key: 'dancing');
+  }
+
   @override
   Widget build(BuildContext context) => Scaffold(
         appBar: AppBar(
@@ -61,13 +72,10 @@ class _CustomAnimationPageState extends State<CustomAnimationPage> {
           onPressed: () async {
             if (idle) {
               playMusic();
-              await arkitController.playAnimation(
-                  key: 'walking',
-                  sceneName: 'models.scnassets/WalkingFixed.dae',
-                  animationIdentifier: 'WalkingFixed-1');
+              playAnimation();
             } else {
               pauseMusic();
-              await arkitController.stopAnimation(key: 'walking');
+              stopAnimation();
             }
             setState(() => idle = !idle);
           },
@@ -98,9 +106,9 @@ class _CustomAnimationPageState extends State<CustomAnimationPage> {
       controller?.remove(node!.name);
     }
     node = ARKitReferenceNode(
-      url: 'models.scnassets/amoenusFixed.dae',
+      url: 'models.scnassets/amoenus_danceFixed.dae',
       position: vector.Vector3(0, 0, 0),
-      scale: vector.Vector3(0.0015, 0.0015, 0.0015),
+      scale: vector.Vector3(0.0005, 0.0005, 0.0005),
     );
     controller?.add(node!, parentNodeName: anchor.nodeName);
   }
