@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "105984636696",
+    "project_id": "commentstoragera",
+    "storage_bucket": "commentstoragera.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:105984636696:android:4dc55434204a1870f8d06d",
+        "android_client_info": {
+          "package_name": "com.example.cook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "105984636696-ied7do3i6sr9mjhjj7q2h9fp5qqfb5ds.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIFXKmkaMlco2vJBl0cYjFIW6EbXgQb3s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "105984636696-ied7do3i6sr9mjhjj7q2h9fp5qqfb5ds.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

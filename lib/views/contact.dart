@@ -42,6 +42,26 @@ class _ContactState extends State<Contact> {
             ),
             Center(
                 child: Text('\nCoordinadora del Área Fiscal Administrativa\n')),
+                SizedBox(height:10),
+                ListTile(
+                  title: Icon(Icons.touch_app),
+                  //title: Text('Presiona un icono para ponerte automaticamente en contacto', 
+                    //textAlign:TextAlign.center,
+                  //),
+                  tileColor: Colors.orange.shade50,
+                  onTap: (){
+                    showDialog(
+                      context: context, 
+                      builder: (context) => AlertDialog(
+                        backgroundColor: Color.fromRGBO(255, 89, 0, 1),
+                        title: Text('Toca el icono de llamada o whatsapp para ponerte automáticamente en contacto',
+                        style: TextStyle(fontSize: 15, color: Colors.white),
+                        ),
+                      )
+                    );
+                  },
+                ),
+                SizedBox(height:10),
             ListTile(
               leading: Icon(
                 Icons.email,
@@ -51,16 +71,17 @@ class _ContactState extends State<Contact> {
             ),
             ListTile(
               leading: Icon(
-                Icons.contact_phone,
+                Icons.phone_enabled_rounded,
                 color: Colors.black,
               ),
-              title: Text("(55) 5627 0210 Ext. 8251"),
+              title: Text("(55) 5627 0210 - Ext. 8251"),
+              selectedTileColor: Colors.orange,
               onTap: () {
                 hacerLlamada();
               },
             ),
             ListTile(
-              leading: Icon(Icons.phone_android, color: Colors.black),
+              leading: Icon(Icons.contact_phone, color: Colors.black),
               title: Text("Whatsapp"),
               onTap: () {
                 String mensaje = "¡Buenas Tardes!";

@@ -12,9 +12,15 @@ class _CustomAnimationPageState extends State<CustomAnimationPage> {
   late ARKitController arkitController;
   ARKitReferenceNode? node;
   bool idle = true;
+  
+  //bool play = false;
+  // AudioPlayer _audioPlayer = AudioPlayer();
+  // AudioCache _audioCache = AudioCache();
+  // AudioPlayerState _audioPlayerState = AudioPlayerState();
 
-  AudioCache cache;
-  AudioPlayer player;
+  late AudioCache cache;
+  late AudioPlayer player;
+  
 
   @override
   void dispose() {
@@ -22,12 +28,12 @@ class _CustomAnimationPageState extends State<CustomAnimationPage> {
     super.dispose();
   }
 
-  void _playFile() async {
+  Future _playFile() async {
     player = await cache.play('my_audio.mp3'); // assign player here
   }
 
   void _stopFile() {
-    player?.stop(); // stop the file like this
+    player.stop(); // stop the file like this
   }
 
   @override
@@ -43,8 +49,9 @@ class _CustomAnimationPageState extends State<CustomAnimationPage> {
           ),
           backgroundColor: Color.fromRGBO(255, 89, 0, 1),
           onPressed: () async {
+            //play = !play;
             final player = AudioCache();
-            print('Ola?');
+            //print('Ola?');
             if (idle) {
               player.play('audio/DoYou.mp3');
               /**await arkitController.playAnimation(
@@ -54,6 +61,7 @@ class _CustomAnimationPageState extends State<CustomAnimationPage> {
 
             } else {
               /*await arkitController.stopAnimation(key: 'walking');*/
+              
             }
             setState(() => idle = !idle);
           },

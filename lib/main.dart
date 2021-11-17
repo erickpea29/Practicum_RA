@@ -6,6 +6,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import './views/pages.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 bool? seenOnboard;
 void main() async {
@@ -14,7 +15,9 @@ void main() async {
       overlays: [SystemUiOverlay.bottom, SystemUiOverlay.top]);
   SharedPreferences pref = await SharedPreferences.getInstance();
   seenOnboard = pref.getBool('seenOnboard') ?? false;*/
+  //await Firebase.initializeApp();
   runApp(const MyApp());
+  await Firebase.initializeApp();
 }
 
 class MyApp extends StatelessWidget {
