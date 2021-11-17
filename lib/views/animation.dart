@@ -13,11 +13,6 @@ class _CustomAnimationPageState extends State<CustomAnimationPage> {
   ARKitReferenceNode? node;
   bool idle = true;
 
-  //bool play = false;
-  // AudioPlayer _audioPlayer = AudioPlayer();
-  // AudioCache _audioCache = AudioCache();
-  // AudioPlayerState _audioPlayerState = AudioPlayerState();
-
   @override
   void dispose() {
     arkitController.dispose();
@@ -66,15 +61,13 @@ class _CustomAnimationPageState extends State<CustomAnimationPage> {
           onPressed: () async {
             if (idle) {
               playMusic();
-              /**await arkitController.playAnimation(
+              await arkitController.playAnimation(
                   key: 'walking',
                   sceneName: 'models.scnassets/WalkingFixed.dae',
-                  animationIdentifier: 'WalkingFixed-1');*/
-
+                  animationIdentifier: 'WalkingFixed-1');
             } else {
               pauseMusic();
-              /*await arkitController.stopAnimation(key: 'walking');*/
-
+              await arkitController.stopAnimation(key: 'walking');
             }
             setState(() => idle = !idle);
           },
