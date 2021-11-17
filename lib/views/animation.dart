@@ -98,7 +98,7 @@ class _CustomAnimationPageState extends State<CustomAnimationPage> {
       controller?.remove(node!.name);
     }
     node = ARKitReferenceNode(
-      url: 'models.scnassets/IdleFixed.dae',
+      url: 'models.scnassets/amoenusFixed.dae',
       position: vector.Vector3(0, 0, 0),
       scale: vector.Vector3(0.0015, 0.0015, 0.0015),
     );
