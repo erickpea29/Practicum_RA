@@ -18,11 +18,11 @@ class MyTextButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(
-        horizontal: 20,
+        horizontal: 50,
       ),
       child: SizedBox(
-        height: SizeConfig.blockSizeH! * 10,
-        width: SizeConfig.blockSizeV! * 115,
+        height: 74,
+        width: 500,
         child: TextButton(
           onPressed: onPressed,
           child: Text(

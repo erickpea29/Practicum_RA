@@ -80,7 +80,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                       height: sizeV * 5,
                     ),
                     Container(
-                      height: sizeV * 50,
+                      height: sizeV * 45,
                       child: Image.asset(onboardingContents[index].image,
                           fit: BoxFit.contain),
                     ),
