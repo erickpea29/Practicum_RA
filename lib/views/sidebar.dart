@@ -29,7 +29,7 @@ class NavBar extends StatelessWidget {
           ),
           ListTile(
             leading: Icon(Icons.home),
-            title: Text("Menu"),
+            title: Text("Menú Capítulos"),
             onTap: () {
               Navigator.push(
                 context,

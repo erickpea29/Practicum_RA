@@ -45,9 +45,6 @@ class _ContactState extends State<Contact> {
                 SizedBox(height:10),
                 ListTile(
                   title: Icon(Icons.touch_app),
-                  //title: Text('Presiona un icono para ponerte automaticamente en contacto', 
-                    //textAlign:TextAlign.center,
-                  //),
                   tileColor: Colors.orange.shade50,
                   onTap: (){
                     showDialog(
