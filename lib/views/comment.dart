@@ -38,7 +38,7 @@ class _CommentState extends State<Comment> {
                   padding: const EdgeInsets.only(top: 35.0),
                   child: Center(
                     child: Text(
-                      'Escribenos',
+                      'Escríbenos',
                       style: TextStyle(
                         fontSize: 25,
                         color: Color.fromRGBO(255, 89, 0, 1),

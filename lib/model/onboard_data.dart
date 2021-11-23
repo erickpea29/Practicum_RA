@@ -27,7 +27,7 @@ List<OnBoarding> onboardingContents = [
     image: 'assets/images/Test3_1.png',
   ),
   OnBoarding(
-    title: '¿Estas listo?',
+    title: '¿Estás listo?',
     subtitle: '¡Comencemos!',
     image: 'assets/images/Test4_1.png',
   ),

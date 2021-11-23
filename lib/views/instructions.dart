@@ -32,7 +32,7 @@ class Instructions extends StatelessWidget {
                   height: 125.0,
                 ),
                 Text(
-                  '\n2. Enfoca la camara y apunta hacia una superficie plana',
+                  '\n2. Enfoca la cámara y apunta hacia una superficie plana',
                   style: TextStyle(
                     fontSize: 25.0,
                     color: Color.fromRGBO(255, 89, 0, 1),
