@@ -28,8 +28,8 @@ class Instructions extends StatelessWidget {
                   textAlign: TextAlign.center,
                 ),
                 Image.asset(
-                  'assets/images/giphy.gif',
-                  height: 150.0,
+                  'assets/images/uno.jpeg',
+                  height: 125.0,
                 ),
                 Text(
                   '\n2. Enfoca la camara y apunta hacia una superficie plana',
@@ -40,7 +40,7 @@ class Instructions extends StatelessWidget {
                   textAlign: TextAlign.center,
                 ),
                 Image.asset(
-                  'assets/images/giphy.gif',
+                  'assets/images/dos.gif',
                   height: 150.0,
                 ),
                 Text(
@@ -52,7 +52,7 @@ class Instructions extends StatelessWidget {
                   textAlign: TextAlign.center,
                 ),
                 Image.asset(
-                  'assets/images/giphy.gif',
+                  'assets/images/tres.jpeg',
                   height: 150.0,
                 ),
                 Text('\n'),

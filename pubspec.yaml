@@ -80,7 +80,7 @@ flutter:
   assets:
     - assets/images/
     - assets/images/giphy.gif
-    - assets/audio/DoYou.mp3
+    - assets/audio/derecho_romano.mp3
 
   # To add assets to your application, add an assets section, like this:
   # assets:

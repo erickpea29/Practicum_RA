@@ -36,14 +36,14 @@ class _CustomAnimationPageState extends State<CustomAnimationPage> {
   AudioPlayer audioPlayer = AudioPlayer();
   PlayerState playerState = PlayerState.PAUSED;
   AudioCache audioCache = AudioCache();
-  String path = 'audio/DoYou.mp3';
+  String path = 'audio/derecho_romano.mp3';
 
   playMusic() async {
     await audioCache.play(path);
   }
 
   pauseMusic() async {
-    await audioPlayer.pause();
+    await audioPlayer.stop();
   }
 
   playAnimation() async {
