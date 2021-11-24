@@ -46,17 +46,21 @@ class _CustomAnimationPageState extends State<CustomAnimationPage> {
     await audioPlayer.stop();
   }
 
-  playAnimation() async {
+  Future<String> playAnimation(String llave, String dir, String id) async {
     await arkitController.playAnimation(
-        key: 'dancing',
-        sceneName: 'models.scnassets/amoenus_dancingFixed',
-        animationIdentifier: 'amoenus_dancingFixed-1');
+        key: llave, sceneName: dir, animationIdentifier: id);
+    return llave;
   }
 
-  stopAnimation() async {
-    await arkitController.stopAnimation(key: 'dancing');
+  Future<String> convertir(String c) async {
+    return c;
   }
 
+  stopAnimation(Future<String> llave) async {
+    await arkitController.stopAnimation(key: llave.toString());
+  }
+
+  String k = "";
   @override
   Widget build(BuildContext context) => Scaffold(
         appBar: AppBar(
@@ -72,10 +76,31 @@ class _CustomAnimationPageState extends State<CustomAnimationPage> {
           onPressed: () async {
             if (idle) {
               playMusic();
-              playAnimation();
+              /*k = playAnimation(
+                      'walk', 'models.scnassets/walk_1Fixed', 'walk_1Fixed-1')
+                  .toString();*/
+              k = playAnimation(
+                      'talk3', 'models.scnassets/talk_3Fixed', 'talk_3Fixed-1')
+                  .toString();
+              /*k = playAnimation(
+                      'talk4', 'models.scnassets/talk_4Fixed', 'talk_4Fixed-1')
+                  .toString();*/
+              k = playAnimation(
+                      'talk1', 'models.scnassets/talk_1Fixed', 'talk_1Fixed-1')
+                  .toString(); /*
+              k = playAnimation(
+                      'talk2', 'models.scnassets/talk_2Fixed', 'talk_2Fixed-1')
+                  .toString();
+              k = playAnimation(
+                      'talk3', 'models.scnassets/talk_3Fixed', 'talk_3Fixed-1')
+                  .toString();
+
+              k = playAnimation(
+                      'talk5', 'models.scnassets/talk_5Fixed', 'talk_5Fixed-1')
+                  .toString();*/
             } else {
               pauseMusic();
-              stopAnimation();
+              stopAnimation(convertir(k));
             }
             setState(() => idle = !idle);
           },
@@ -106,7 +131,7 @@ class _CustomAnimationPageState extends State<CustomAnimationPage> {
       controller?.remove(node!.name);
     }
     node = ARKitReferenceNode(
-      url: 'models.scnassets/amoenus_idleFixed.dae',
+      url: 'models.scnassets/idle_1Fixed.dae',
       position: vector.Vector3(0, 0, 0),
       scale: vector.Vector3(0.0005, 0.0005, 0.0005),
     );
