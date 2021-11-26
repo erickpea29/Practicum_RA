@@ -475,7 +475,7 @@ mixamorig_RightHandThumb1 mixamorig_RightHandThumb2 mixamorig_RightHandThumb3</N
     </controller>
   </library_controllers>
   <library_animations>
-    <animation id="mixamorig_Hips-anim" name="mixamorig_Hips">
+    <animation>
       <source id="mixamorig_Hips-Matrix-animation-input">
         <float_array id="mixamorig_Hips-Matrix-animation-input-array" count="156">
 
@@ -688,8 +688,6 @@ LINEAR</Name_array>
         <input semantic="INTERPOLATION" source="#mixamorig_Hips-Interpolations"/>
       </sampler>
       <channel source="#mixamorig_Hips-Matrix-animation-transform" target="mixamorig_Hips/matrix"/>
-    </animation>
-    <animation id="mixamorig_Spine-anim" name="mixamorig_Spine">
       <source id="mixamorig_Spine-Matrix-animation-input">
         <float_array id="mixamorig_Spine-Matrix-animation-input-array" count="156">
 
@@ -902,8 +900,6 @@ LINEAR</Name_array>
         <input semantic="INTERPOLATION" source="#mixamorig_Spine-Interpolations"/>
       </sampler>
       <channel source="#mixamorig_Spine-Matrix-animation-transform" target="mixamorig_Spine/matrix"/>
-    </animation>
-    <animation id="mixamorig_Spine1-anim" name="mixamorig_Spine1">
       <source id="mixamorig_Spine1-Matrix-animation-input">
         <float_array id="mixamorig_Spine1-Matrix-animation-input-array" count="156">
 
@@ -1116,8 +1112,6 @@ LINEAR</Name_array>
         <input semantic="INTERPOLATION" source="#mixamorig_Spine1-Interpolations"/>
       </sampler>
       <channel source="#mixamorig_Spine1-Matrix-animation-transform" target="mixamorig_Spine1/matrix"/>
-    </animation>
-    <animation id="mixamorig_Spine2-anim" name="mixamorig_Spine2">
       <source id="mixamorig_Spine2-Matrix-animation-input">
         <float_array id="mixamorig_Spine2-Matrix-animation-input-array" count="156">
 
@@ -1330,8 +1324,6 @@ LINEAR</Name_array>
         <input semantic="INTERPOLATION" source="#mixamorig_Spine2-Interpolations"/>
       </sampler>
       <channel source="#mixamorig_Spine2-Matrix-animation-transform" target="mixamorig_Spine2/matrix"/>
-    </animation>
-    <animation id="mixamorig_Neck-anim" name="mixamorig_Neck">
       <source id="mixamorig_Neck-Matrix-animation-input">
         <float_array id="mixamorig_Neck-Matrix-animation-input-array" count="156">
 
@@ -1544,8 +1536,6 @@ LINEAR</Name_array>
         <input semantic="INTERPOLATION" source="#mixamorig_Neck-Interpolations"/>
       </sampler>
       <channel source="#mixamorig_Neck-Matrix-animation-transform" target="mixamorig_Neck/matrix"/>
-    </animation>
-    <animation id="mixamorig_Head-anim" name="mixamorig_Head">
       <source id="mixamorig_Head-Matrix-animation-input">
         <float_array id="mixamorig_Head-Matrix-animation-input-array" count="156">
 
@@ -1758,8 +1748,6 @@ LINEAR</Name_array>
         <input semantic="INTERPOLATION" source="#mixamorig_Head-Interpolations"/>
       </sampler>
       <channel source="#mixamorig_Head-Matrix-animation-transform" target="mixamorig_Head/matrix"/>
-    </animation>
-    <animation id="mixamorig_LeftShoulder-anim" name="mixamorig_LeftShoulder">
       <source id="mixamorig_LeftShoulder-Matrix-animation-input">
         <float_array id="mixamorig_LeftShoulder-Matrix-animation-input-array" count="156">
 
@@ -1972,8 +1960,6 @@ LINEAR</Name_array>
         <input semantic="INTERPOLATION" source="#mixamorig_LeftShoulder-Interpolations"/>
       </sampler>
       <channel source="#mixamorig_LeftShoulder-Matrix-animation-transform" target="mixamorig_LeftShoulder/matrix"/>
-    </animation>
-    <animation id="mixamorig_LeftArm-anim" name="mixamorig_LeftArm">
       <source id="mixamorig_LeftArm-Matrix-animation-input">
         <float_array id="mixamorig_LeftArm-Matrix-animation-input-array" count="156">
 
@@ -2186,8 +2172,6 @@ LINEAR</Name_array>
         <input semantic="INTERPOLATION" source="#mixamorig_LeftArm-Interpolations"/>
       </sampler>
       <channel source="#mixamorig_LeftArm-Matrix-animation-transform" target="mixamorig_LeftArm/matrix"/>
-    </animation>
-    <animation id="mixamorig_LeftForeArm-anim" name="mixamorig_LeftForeArm">
       <source id="mixamorig_LeftForeArm-Matrix-animation-input">
         <float_array id="mixamorig_LeftForeArm-Matrix-animation-input-array" count="156">
 
@@ -2400,8 +2384,6 @@ LINEAR</Name_array>
         <input semantic="INTERPOLATION" source="#mixamorig_LeftForeArm-Interpolations"/>
       </sampler>
       <channel source="#mixamorig_LeftForeArm-Matrix-animation-transform" target="mixamorig_LeftForeArm/matrix"/>
-    </animation>
-    <animation id="mixamorig_LeftHand-anim" name="mixamorig_LeftHand">
       <source id="mixamorig_LeftHand-Matrix-animation-input">
         <float_array id="mixamorig_LeftHand-Matrix-animation-input-array" count="156">
 
@@ -2614,8 +2596,6 @@ LINEAR</Name_array>
         <input semantic="INTERPOLATION" source="#mixamorig_LeftHand-Interpolations"/>
       </sampler>
       <channel source="#mixamorig_LeftHand-Matrix-animation-transform" target="mixamorig_LeftHand/matrix"/>
-    </animation>
-    <animation id="mixamorig_LeftHandThumb1-anim" name="mixamorig_LeftHandThumb1">
       <source id="mixamorig_LeftHandThumb1-Matrix-animation-input">
         <float_array id="mixamorig_LeftHandThumb1-Matrix-animation-input-array" count="156">
 
@@ -2828,8 +2808,6 @@ LINEAR</Name_array>
         <input semantic="INTERPOLATION" source="#mixamorig_LeftHandThumb1-Interpolations"/>
       </sampler>
       <channel source="#mixamorig_LeftHandThumb1-Matrix-animation-transform" target="mixamorig_LeftHandThumb1/matrix"/>
-    </animation>
-    <animation id="mixamorig_LeftHandThumb2-anim" name="mixamorig_LeftHandThumb2">
       <source id="mixamorig_LeftHandThumb2-Matrix-animation-input">
         <float_array id="mixamorig_LeftHandThumb2-Matrix-animation-input-array" count="156">
 
@@ -3042,8 +3020,6 @@ LINEAR</Name_array>
         <input semantic="INTERPOLATION" source="#mixamorig_LeftHandThumb2-Interpolations"/>
       </sampler>
       <channel source="#mixamorig_LeftHandThumb2-Matrix-animation-transform" target="mixamorig_LeftHandThumb2/matrix"/>
-    </animation>
-    <animation id="mixamorig_LeftHandThumb3-anim" name="mixamorig_LeftHandThumb3">
       <source id="mixamorig_LeftHandThumb3-Matrix-animation-input">
         <float_array id="mixamorig_LeftHandThumb3-Matrix-animation-input-array" count="156">
 
@@ -3256,8 +3232,6 @@ LINEAR</Name_array>
         <input semantic="INTERPOLATION" source="#mixamorig_LeftHandThumb3-Interpolations"/>
       </sampler>
       <channel source="#mixamorig_LeftHandThumb3-Matrix-animation-transform" target="mixamorig_LeftHandThumb3/matrix"/>
-    </animation>
-    <animation id="mixamorig_LeftHandIndex1-anim" name="mixamorig_LeftHandIndex1">
       <source id="mixamorig_LeftHandIndex1-Matrix-animation-input">
         <float_array id="mixamorig_LeftHandIndex1-Matrix-animation-input-array" count="156">
 
@@ -3470,8 +3444,6 @@ LINEAR</Name_array>
         <input semantic="INTERPOLATION" source="#mixamorig_LeftHandIndex1-Interpolations"/>
       </sampler>
       <channel source="#mixamorig_LeftHandIndex1-Matrix-animation-transform" target="mixamorig_LeftHandIndex1/matrix"/>
-    </animation>
-    <animation id="mixamorig_LeftHandIndex2-anim" name="mixamorig_LeftHandIndex2">
       <source id="mixamorig_LeftHandIndex2-Matrix-animation-input">
         <float_array id="mixamorig_LeftHandIndex2-Matrix-animation-input-array" count="156">
 
@@ -3684,8 +3656,6 @@ LINEAR</Name_array>
         <input semantic="INTERPOLATION" source="#mixamorig_LeftHandIndex2-Interpolations"/>
       </sampler>
       <channel source="#mixamorig_LeftHandIndex2-Matrix-animation-transform" target="mixamorig_LeftHandIndex2/matrix"/>
-    </animation>
-    <animation id="mixamorig_LeftHandIndex3-anim" name="mixamorig_LeftHandIndex3">
       <source id="mixamorig_LeftHandIndex3-Matrix-animation-input">
         <float_array id="mixamorig_LeftHandIndex3-Matrix-animation-input-array" count="156">
 
@@ -3898,8 +3868,6 @@ LINEAR</Name_array>
         <input semantic="INTERPOLATION" source="#mixamorig_LeftHandIndex3-Interpolations"/>
       </sampler>
       <channel source="#mixamorig_LeftHandIndex3-Matrix-animation-transform" target="mixamorig_LeftHandIndex3/matrix"/>
-    </animation>
-    <animation id="mixamorig_RightShoulder-anim" name="mixamorig_RightShoulder">
       <source id="mixamorig_RightShoulder-Matrix-animation-input">
         <float_array id="mixamorig_RightShoulder-Matrix-animation-input-array" count="156">
 
@@ -4112,8 +4080,6 @@ LINEAR</Name_array>
         <input semantic="INTERPOLATION" source="#mixamorig_RightShoulder-Interpolations"/>
       </sampler>
       <channel source="#mixamorig_RightShoulder-Matrix-animation-transform" target="mixamorig_RightShoulder/matrix"/>
-    </animation>
-    <animation id="mixamorig_RightArm-anim" name="mixamorig_RightArm">
       <source id="mixamorig_RightArm-Matrix-animation-input">
         <float_array id="mixamorig_RightArm-Matrix-animation-input-array" count="156">
 
@@ -4326,8 +4292,6 @@ LINEAR</Name_array>
         <input semantic="INTERPOLATION" source="#mixamorig_RightArm-Interpolations"/>
       </sampler>
       <channel source="#mixamorig_RightArm-Matrix-animation-transform" target="mixamorig_RightArm/matrix"/>
-    </animation>
-    <animation id="mixamorig_RightForeArm-anim" name="mixamorig_RightForeArm">
       <source id="mixamorig_RightForeArm-Matrix-animation-input">
         <float_array id="mixamorig_RightForeArm-Matrix-animation-input-array" count="156">
 
@@ -4540,8 +4504,6 @@ LINEAR</Name_array>
         <input semantic="INTERPOLATION" source="#mixamorig_RightForeArm-Interpolations"/>
       </sampler>
       <channel source="#mixamorig_RightForeArm-Matrix-animation-transform" target="mixamorig_RightForeArm/matrix"/>
-    </animation>
-    <animation id="mixamorig_RightHand-anim" name="mixamorig_RightHand">
       <source id="mixamorig_RightHand-Matrix-animation-input">
         <float_array id="mixamorig_RightHand-Matrix-animation-input-array" count="156">
 
@@ -4754,8 +4716,6 @@ LINEAR</Name_array>
         <input semantic="INTERPOLATION" source="#mixamorig_RightHand-Interpolations"/>
       </sampler>
       <channel source="#mixamorig_RightHand-Matrix-animation-transform" target="mixamorig_RightHand/matrix"/>
-    </animation>
-    <animation id="mixamorig_RightHandThumb1-anim" name="mixamorig_RightHandThumb1">
       <source id="mixamorig_RightHandThumb1-Matrix-animation-input">
         <float_array id="mixamorig_RightHandThumb1-Matrix-animation-input-array" count="156">
 
@@ -4968,8 +4928,6 @@ LINEAR</Name_array>
         <input semantic="INTERPOLATION" source="#mixamorig_RightHandThumb1-Interpolations"/>
       </sampler>
       <channel source="#mixamorig_RightHandThumb1-Matrix-animation-transform" target="mixamorig_RightHandThumb1/matrix"/>
-    </animation>
-    <animation id="mixamorig_RightHandThumb2-anim" name="mixamorig_RightHandThumb2">
       <source id="mixamorig_RightHandThumb2-Matrix-animation-input">
         <float_array id="mixamorig_RightHandThumb2-Matrix-animation-input-array" count="156">
 
@@ -5182,8 +5140,6 @@ LINEAR</Name_array>
         <input semantic="INTERPOLATION" source="#mixamorig_RightHandThumb2-Interpolations"/>
       </sampler>
       <channel source="#mixamorig_RightHandThumb2-Matrix-animation-transform" target="mixamorig_RightHandThumb2/matrix"/>
-    </animation>
-    <animation id="mixamorig_RightHandThumb3-anim" name="mixamorig_RightHandThumb3">
       <source id="mixamorig_RightHandThumb3-Matrix-animation-input">
         <float_array id="mixamorig_RightHandThumb3-Matrix-animation-input-array" count="156">
 
@@ -5396,8 +5352,6 @@ LINEAR</Name_array>
         <input semantic="INTERPOLATION" source="#mixamorig_RightHandThumb3-Interpolations"/>
       </sampler>
       <channel source="#mixamorig_RightHandThumb3-Matrix-animation-transform" target="mixamorig_RightHandThumb3/matrix"/>
-    </animation>
-    <animation id="mixamorig_RightHandIndex1-anim" name="mixamorig_RightHandIndex1">
       <source id="mixamorig_RightHandIndex1-Matrix-animation-input">
         <float_array id="mixamorig_RightHandIndex1-Matrix-animation-input-array" count="156">
 
@@ -5610,8 +5564,6 @@ LINEAR</Name_array>
         <input semantic="INTERPOLATION" source="#mixamorig_RightHandIndex1-Interpolations"/>
       </sampler>
       <channel source="#mixamorig_RightHandIndex1-Matrix-animation-transform" target="mixamorig_RightHandIndex1/matrix"/>
-    </animation>
-    <animation id="mixamorig_RightHandIndex2-anim" name="mixamorig_RightHandIndex2">
       <source id="mixamorig_RightHandIndex2-Matrix-animation-input">
         <float_array id="mixamorig_RightHandIndex2-Matrix-animation-input-array" count="156">
 
@@ -5824,8 +5776,6 @@ LINEAR</Name_array>
         <input semantic="INTERPOLATION" source="#mixamorig_RightHandIndex2-Interpolations"/>
       </sampler>
       <channel source="#mixamorig_RightHandIndex2-Matrix-animation-transform" target="mixamorig_RightHandIndex2/matrix"/>
-    </animation>
-    <animation id="mixamorig_RightHandIndex3-anim" name="mixamorig_RightHandIndex3">
       <source id="mixamorig_RightHandIndex3-Matrix-animation-input">
         <float_array id="mixamorig_RightHandIndex3-Matrix-animation-input-array" count="156">
 
@@ -6038,8 +5988,6 @@ LINEAR</Name_array>
         <input semantic="INTERPOLATION" source="#mixamorig_RightHandIndex3-Interpolations"/>
       </sampler>
       <channel source="#mixamorig_RightHandIndex3-Matrix-animation-transform" target="mixamorig_RightHandIndex3/matrix"/>
-    </animation>
-    <animation id="mixamorig_LeftUpLeg-anim" name="mixamorig_LeftUpLeg">
       <source id="mixamorig_LeftUpLeg-Matrix-animation-input">
         <float_array id="mixamorig_LeftUpLeg-Matrix-animation-input-array" count="156">
 
@@ -6252,8 +6200,6 @@ LINEAR</Name_array>
         <input semantic="INTERPOLATION" source="#mixamorig_LeftUpLeg-Interpolations"/>
       </sampler>
       <channel source="#mixamorig_LeftUpLeg-Matrix-animation-transform" target="mixamorig_LeftUpLeg/matrix"/>
-    </animation>
-    <animation id="mixamorig_LeftLeg-anim" name="mixamorig_LeftLeg">
       <source id="mixamorig_LeftLeg-Matrix-animation-input">
         <float_array id="mixamorig_LeftLeg-Matrix-animation-input-array" count="156">
 
@@ -6466,8 +6412,6 @@ LINEAR</Name_array>
         <input semantic="INTERPOLATION" source="#mixamorig_LeftLeg-Interpolations"/>
       </sampler>
       <channel source="#mixamorig_LeftLeg-Matrix-animation-transform" target="mixamorig_LeftLeg/matrix"/>
-    </animation>
-    <animation id="mixamorig_LeftFoot-anim" name="mixamorig_LeftFoot">
       <source id="mixamorig_LeftFoot-Matrix-animation-input">
         <float_array id="mixamorig_LeftFoot-Matrix-animation-input-array" count="156">
 
@@ -6680,8 +6624,6 @@ LINEAR</Name_array>
         <input semantic="INTERPOLATION" source="#mixamorig_LeftFoot-Interpolations"/>
       </sampler>
       <channel source="#mixamorig_LeftFoot-Matrix-animation-transform" target="mixamorig_LeftFoot/matrix"/>
-    </animation>
-    <animation id="mixamorig_LeftToeBase-anim" name="mixamorig_LeftToeBase">
       <source id="mixamorig_LeftToeBase-Matrix-animation-input">
         <float_array id="mixamorig_LeftToeBase-Matrix-animation-input-array" count="156">
 
@@ -6894,8 +6836,6 @@ LINEAR</Name_array>
         <input semantic="INTERPOLATION" source="#mixamorig_LeftToeBase-Interpolations"/>
       </sampler>
       <channel source="#mixamorig_LeftToeBase-Matrix-animation-transform" target="mixamorig_LeftToeBase/matrix"/>
-    </animation>
-    <animation id="mixamorig_RightUpLeg-anim" name="mixamorig_RightUpLeg">
       <source id="mixamorig_RightUpLeg-Matrix-animation-input">
         <float_array id="mixamorig_RightUpLeg-Matrix-animation-input-array" count="156">
 
@@ -7108,8 +7048,6 @@ LINEAR</Name_array>
         <input semantic="INTERPOLATION" source="#mixamorig_RightUpLeg-Interpolations"/>
       </sampler>
       <channel source="#mixamorig_RightUpLeg-Matrix-animation-transform" target="mixamorig_RightUpLeg/matrix"/>
-    </animation>
-    <animation id="mixamorig_RightLeg-anim" name="mixamorig_RightLeg">
       <source id="mixamorig_RightLeg-Matrix-animation-input">
         <float_array id="mixamorig_RightLeg-Matrix-animation-input-array" count="156">
 
@@ -7322,8 +7260,6 @@ LINEAR</Name_array>
         <input semantic="INTERPOLATION" source="#mixamorig_RightLeg-Interpolations"/>
       </sampler>
       <channel source="#mixamorig_RightLeg-Matrix-animation-transform" target="mixamorig_RightLeg/matrix"/>
-    </animation>
-    <animation id="mixamorig_RightFoot-anim" name="mixamorig_RightFoot">
       <source id="mixamorig_RightFoot-Matrix-animation-input">
         <float_array id="mixamorig_RightFoot-Matrix-animation-input-array" count="156">
 
@@ -7536,8 +7472,6 @@ LINEAR</Name_array>
         <input semantic="INTERPOLATION" source="#mixamorig_RightFoot-Interpolations"/>
       </sampler>
       <channel source="#mixamorig_RightFoot-Matrix-animation-transform" target="mixamorig_RightFoot/matrix"/>
-    </animation>
-    <animation id="mixamorig_RightToeBase-anim" name="mixamorig_RightToeBase">
       <source id="mixamorig_RightToeBase-Matrix-animation-input">
         <float_array id="mixamorig_RightToeBase-Matrix-animation-input-array" count="156">
 
@@ -7750,9 +7684,8 @@ LINEAR</Name_array>
         <input semantic="INTERPOLATION" source="#mixamorig_RightToeBase-Interpolations"/>
       </sampler>
       <channel source="#mixamorig_RightToeBase-Matrix-animation-transform" target="mixamorig_RightToeBase/matrix"/>
-    </animation>
-  </library_animations>
-  <library_visual_scenes>
+  </animation>
+</library_animations>  <library_visual_scenes>
     <visual_scene id="RootNode" name="RootNode">
       <node id="Cube" name="Cube" sid="Cube">
         <instance_controller url="#CubeController">

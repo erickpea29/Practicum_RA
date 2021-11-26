@@ -22,6 +22,7 @@ class _CustomAnimationPageState extends State<CustomAnimationPage> {
     audioCache.clearAll();
   }
 
+  int contar = 0;
   void initState() {
     super.initState();
 
@@ -46,18 +47,15 @@ class _CustomAnimationPageState extends State<CustomAnimationPage> {
     await audioPlayer.stop();
   }
 
-  Future<String> playAnimation(String llave, String dir, String id) async {
+  void playAnimation(String llave, String dir, String id) async {
+    k = llave;
     await arkitController.playAnimation(
         key: llave, sceneName: dir, animationIdentifier: id);
-    return llave;
+    contar++;
   }
 
-  Future<String> convertir(String c) async {
-    return c;
-  }
-
-  stopAnimation(Future<String> llave) async {
-    await arkitController.stopAnimation(key: llave.toString());
+  stopAnimation(String llave) async {
+    await arkitController.stopAnimation(key: llave);
   }
 
   String k = "";
@@ -76,31 +74,25 @@ class _CustomAnimationPageState extends State<CustomAnimationPage> {
           onPressed: () async {
             if (idle) {
               playMusic();
-              /*k = playAnimation(
-                      'walk', 'models.scnassets/walk_1Fixed', 'walk_1Fixed-1')
-                  .toString();*/
-              k = playAnimation(
-                      'talk3', 'models.scnassets/talk_3Fixed', 'talk_3Fixed-1')
-                  .toString();
-              /*k = playAnimation(
-                      'talk4', 'models.scnassets/talk_4Fixed', 'talk_4Fixed-1')
-                  .toString();*/
-              k = playAnimation(
-                      'talk1', 'models.scnassets/talk_1Fixed', 'talk_1Fixed-1')
-                  .toString(); /*
-              k = playAnimation(
-                      'talk2', 'models.scnassets/talk_2Fixed', 'talk_2Fixed-1')
-                  .toString();
-              k = playAnimation(
-                      'talk3', 'models.scnassets/talk_3Fixed', 'talk_3Fixed-1')
-                  .toString();
 
-              k = playAnimation(
-                      'talk5', 'models.scnassets/talk_5Fixed', 'talk_5Fixed-1')
-                  .toString();*/
+              playAnimation(
+                  'talk4', 'models.scnassets/talk_4Fixed', 'talk_4Fixed-1');
+              await Future.delayed(const Duration(seconds: 10));
+              playAnimation(
+                  'talk6', 'models.scnassets/talk_6Fixed', 'talk_6Fixed-1');
+              await Future.delayed(const Duration(seconds: 30));
+              playAnimation(
+                  'talk5', 'models.scnassets/talk_5Fixed', 'talk_5Fixed-1');
+              await Future.delayed(const Duration(seconds: 15));
+              playAnimation(
+                  'talk2', 'models.scnassets/talk_2Fixed', 'talk_2Fixed-1');
+              await Future.delayed(const Duration(seconds: 20));
+              playAnimation(
+                  'talk1', 'models.scnassets/talk_1Fixed', 'talk_1Fixed-1');
+              await Future.delayed(const Duration(seconds: 44));
             } else {
               pauseMusic();
-              stopAnimation(convertir(k));
+              stopAnimation(k);
             }
             setState(() => idle = !idle);
           },
