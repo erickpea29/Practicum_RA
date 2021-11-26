@@ -90,6 +90,15 @@ class _CustomAnimationPageState extends State<CustomAnimationPage> {
               playAnimation(
                   'talk1', 'models.scnassets/talk_1Fixed', 'talk_1Fixed-1');
               await Future.delayed(const Duration(seconds: 44));
+              playAnimation(
+                  'talk2', 'models.scnassets/talk_2Fixed', 'talk_2Fixed-1');
+              await Future.delayed(const Duration(seconds: 20));
+              playAnimation(
+                  'talk6', 'models.scnassets/talk_6Fixed', 'talk_6Fixed-1');
+              await Future.delayed(const Duration(seconds: 30));
+              playAnimation(
+                  'talk5', 'models.scnassets/talk_5Fixed', 'talk_5Fixed-1');
+              await Future.delayed(const Duration(seconds: 15));
             } else {
               pauseMusic();
               stopAnimation(k);
